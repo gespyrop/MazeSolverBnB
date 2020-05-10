@@ -63,12 +63,12 @@ class BranchAndBound{
         }
         else{
             this.state = this.search[0]
+            this.children = []
 
             // If it is a final state
             if( this.blockInPath(this.state, this.maze.getFinish()) && this.state.length < this.cost){
                 this.bestPath = this.state
                 this.cost = this.state.length
-                this.children = []
             }
             // Branch and Bound: Examine the following paths only if they are better than the current best
             else if(this.state.length + 1 < this.cost){
@@ -76,10 +76,6 @@ class BranchAndBound{
                 this.children = this.getChildren(this.state).filter( child => !this.blockInPath(this.state, child[child.length - 1]) )
                 
             }
-            else{
-                this.children = []
-            }
-            
         }
                
     }

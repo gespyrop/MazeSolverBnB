@@ -1,0 +1,22 @@
+{
+  "name": "mazesolverbnb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/sketch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gespyrop/MazeSolverBnB.git"
+  },
+  "author": "gespyrop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gespyrop/MazeSolverBnB/issues"
+  },
+  "homepage": "https://github.com/gespyrop/MazeSolverBnB#readme",
+  "dependencies": {
+    "p5": "^1.0.0"
+  }
+}
